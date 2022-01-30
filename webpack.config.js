@@ -22,6 +22,17 @@ module.exports = {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
+      {
+        test: /\.(png|jpe?g|gif|jpg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              outputPath: "img",
+            }
+          },
+        ],
+      },
     ],
   },
 
@@ -29,5 +40,7 @@ module.exports = {
     template: path.resolve(__dirname, './src/index.html'),
     filename: "index.html",
   })],
+
+
 
 };
