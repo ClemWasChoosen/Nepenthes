@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "NeutralFace";
+  src: url("../fonts/NeutralFace.otf") format("opentype");
+  }
+
+@font-face {
+  font-family: "NeutralFaceBold";
+  src: url("../fonts/NeutralFace-Bold.otf") format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: blue;
+}
+
+.mainScreen{
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-color: #232323;
+  background-size: cover;
+
+  display: grid;
+  grid-template-columns: 5vw 70vw 25vw;
+  grid-template-rows: 90vh 10vh;
+
+}
+
+.brandLeftName{
+  position: relative;
+  color: #f8f1e6;
+  font-family: "NeutralFace";
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  /* display: flex; */
+  /* align-items: flex-end; */
+/*
+  transform-origin: bottom right; */
+  /* height: 100vh; */
+}
+
+.sbrandLeftName{
+  transform-origin: top left;
+  /* border: solid; */
+  /* position: absolute;
+  bottom: 0px; left: 0; */
+  /* height: 100%; */
+  /* transform: rotate(-90deg); */
+  font-size: 250px;
+}
+
+.sbrandLeftName > div {
+  height: 190px;
+  width: 200px;
+  /* border: solid; */
+  transform-origin: center;
+  transform: rotate(-90deg);
+}
