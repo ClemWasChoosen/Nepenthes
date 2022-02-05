@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import './styles/style.css';
-import { Hello } from './script/test'
+import './styles/brandLeftMain.css';
+import { Hello } from './script/test';
 
 // function component() {
 //   const element = document.createElement('div');
@@ -13,3 +14,9 @@ import { Hello } from './script/test'
 // }
 //
 // document.body.appendChild(component());
+
+
+
+window.addEventListener("load", () => {
+  console.log("Load");
+})

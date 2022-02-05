@@ -8,6 +8,11 @@
   src: url("../fonts/NeutralFace-Bold.otf") format("opentype");
 }
 
+@font-face {
+  font-family: "Ilyas";
+  src: url("../fonts/Ilyas.otf") format("opentype");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,15 +31,17 @@ html, body {
   background-size: cover;
 
   display: grid;
-  grid-template-columns: 5vw 70vw 25vw;
-  grid-template-rows: 90vh 10vh;
+  grid-template-columns: 3vw 72vw 25vw;
+  grid-template-rows: 70vh 30vh;
 
 }
 
-.brandLeftName{
+
+/* Styles Css pour le nom de marque à gauche */
+.brandRightName{
   position: relative;
   color: #f8f1e6;
-  font-family: "NeutralFace";
+  font-family: "Ilyas";
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
@@ -47,19 +54,21 @@ html, body {
   /* height: 100vh; */
 }
 
-.sbrandLeftName{
+.sbrandRightName{
   transform-origin: top left;
   /* border: solid; */
   /* position: absolute;
   bottom: 0px; left: 0; */
   /* height: 100%; */
   /* transform: rotate(-90deg); */
-  font-size: 250px;
+  font-size: 300px;
 }
 
-.sbrandLeftName > div {
+.sbrandRightName > div {
   height: 190px;
   width: 200px;
+  position: absolute;
+  bottom: 00px; right: 0;
   /* border: solid; */
   transform-origin: center;
   transform: rotate(-90deg);

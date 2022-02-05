@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "Ilyas";
+  src: url("../fonts/Ilyas.otf") format("opentype");
+}
+
+.brandLeftName {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  display: flex;
+}
+
+.Nepenthes div:nth-child(1){
+  color: #f8f1e6;
+  font-family: "Ilyas";
+  font-size: 100px;
+  height: 92px;
+}
+
+.Nepenthes div:nth-child(2){
+  border: solid 1px #f8f1e6;
+}
+
+.Nepenthes div:nth-child(3){
+  color: #f8f1e6;
+  font-family: "Ilyas";
+  font-size: 30px;
+  transform: scale(-1, 1);
+  width: 100%;
+  height: 40px;
+  padding-top: 2px;
+}
