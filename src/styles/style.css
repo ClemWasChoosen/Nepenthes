@@ -31,21 +31,34 @@ html, body {
   background-size: cover;
 
   display: grid;
-  grid-template-columns: 3vw 72vw 25vw;
-  grid-template-rows: 70vh 30vh;
+  grid-template-columns: 3vw 55vw 17vw 25vw;
+  grid-template-rows: 20vh 50vh 30vh;
 
 }
 
+/* Image a droite de l'écran */
+.centerRightImg{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-image: url('../img/fabrics-blue.jpg');
+  background-size: cover;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  width: 200%;
+}
 
-/* Styles Css pour le nom de marque à gauche */
+
+/* Styles Css pour le nom de marque à droite */
 .brandRightName{
   position: relative;
   color: #f8f1e6;
   font-family: "Ilyas";
-  grid-column-start: 3;
-  grid-column-end: 4;
+  grid-column-start: 4;
+  grid-column-end: 5;
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 4;
 
   /* display: flex; */
   /* align-items: flex-end; */
@@ -55,7 +68,7 @@ html, body {
 }
 
 .sbrandRightName{
-  transform-origin: top left;
+  /* transform-origin: top left; */
   /* border: solid; */
   /* position: absolute;
   bottom: 0px; left: 0; */
@@ -65,11 +78,11 @@ html, body {
 }
 
 .sbrandRightName > div {
-  height: 190px;
-  width: 200px;
+  height: 290px;
+  width: 140px;
   position: absolute;
   bottom: 00px; right: 0;
-  /* border: solid; */
+  border: solid;
   transform-origin: center;
   transform: rotate(-90deg);
 }
