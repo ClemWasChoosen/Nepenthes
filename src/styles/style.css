@@ -19,15 +19,13 @@
   box-sizing: border-box;
 }
 
-html, body {
-  background-color: blue;
-}
 
 .mainScreen{
   overflow: hidden;
   height: 100vh;
   width: 100vw;
-  background-color: #232323;
+  background: rgb(35,35,35);
+  background: linear-gradient(108deg, rgba(35,35,35,1) 0%, rgba(47,47,47,1) 100%);
   background-size: cover;
 
   display: grid;
@@ -38,6 +36,7 @@ html, body {
 
 /* Image a droite de l'écran */
 .centerRightImg{
+  z-index: 1;
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 2;
@@ -70,9 +69,9 @@ html, body {
 .sbrandRightName{
   /* transform-origin: top left; */
   /* border: solid; */
-  /* position: absolute;
-  bottom: 0px; left: 0; */
-  /* height: 100%; */
+  position: relative;
+  bottom: 0px; left: 0;
+  height: 100%;
   /* transform: rotate(-90deg); */
   font-size: 300px;
 }
@@ -81,8 +80,7 @@ html, body {
   height: 290px;
   width: 140px;
   position: absolute;
-  bottom: 00px; right: 0;
-  border: solid;
+  bottom: -120px; right: 0;
   transform-origin: center;
   transform: rotate(-90deg);
 }

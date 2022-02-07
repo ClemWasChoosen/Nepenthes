@@ -9,26 +9,63 @@
   grid-row-start: 3;
   grid-row-end: 4;
 
-  display: flex;
 }
 
-.Nepenthes div:nth-child(1){
+
+.divbrandLeftName {
   color: #f8f1e6;
   font-family: "Ilyas";
   font-size: 100px;
   height: 92px;
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  overflow: hidden;
 }
 
-.Nepenthes div:nth-child(2){
+/* .Nepenthes div:nth-child(3){
   border: solid 1px #f8f1e6;
-}
+} */
 
-.Nepenthes div:nth-child(3){
+.slogan{
   color: #f8f1e6;
   font-family: "Ilyas";
   font-size: 30px;
   transform: scale(-1, 1);
-  width: 100%;
+  width: 320px;
   height: 40px;
   padding-top: 2px;
 }
+
+/* .sbrandLeftName_1 {
+}
+
+.sbrandLeftName_2 {
+
+}
+
+.sbrandLeftName_3 {
+
+}
+
+.sbrandLeftName_4 {
+
+}
+
+.sbrandLeftName_5 {
+
+}
+
+.sbrandLeftName_6 {
+
+}
+
+.sbrandLeftName_7 {
+
+}
+
+.sbrandLeftName_8 {
+
+} */

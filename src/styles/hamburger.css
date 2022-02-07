@@ -1,0 +1,33 @@
+.hamburger {
+  position: fixed;
+  top: 15px; left: 15px;
+  height: 50px;
+  width: 60px;
+
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.humtop {
+  border: solid 2px;
+  width: 70%;
+  color: #f8f1e6;
+  border-radius: 10px;
+
+}
+
+.hummid {
+  border: solid 2px;
+  color: #f8f1e6;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.humbot {
+  border: solid 2px;
+  color: #f8f1e6;
+  width: 85%;
+  border-radius: 10px;
+}
